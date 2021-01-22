@@ -1,4 +1,4 @@
 .vscode/
-pages/login
-pages/number
-node_modules/
+*/login
+*/number
+
