@@ -48,7 +48,7 @@ class Login extends React.Component {
                   get started faster. You can change the text and images and
                   you're good to go. More importantly, looking at them will give
                   you a picture of what you can built with this powerful
-                  Bootstrap 4 Design System. not
+                  Bootstrap 4 Design System.yup
                 </p>
                 <div className="btn-wrapper">
                   <Button color="success" to="/login-page" tag={Link}>
