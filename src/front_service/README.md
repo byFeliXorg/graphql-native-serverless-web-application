@@ -2,6 +2,4 @@
 ``` npm install```
 
 2- **run the application**
-```
-npm run dev
-```
+```npm run dev```
