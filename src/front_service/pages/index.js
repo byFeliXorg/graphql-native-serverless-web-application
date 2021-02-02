@@ -1,17 +1,17 @@
 
 import React from "react";
 
+import HeroSection from '../src/components/Home/HeroSection';
+import { homeObjOne, homeObjTwo, homeObjThree} from '../src/components/Home/Data';
+
 import { AppWithAuthentication } from "../src/components/App";
 
-import "bootstrap/dist/css/bootstrap.min.css";
 
 const LandingPage = () => (
   <AppWithAuthentication>
-    <h1>Landing</h1>
-    <p>
-      The Landing Page is open to everyone, even though the user isn't signed
-      in.
-    </p>
+      <HeroSection {...homeObjOne} />
+      <HeroSection {...homeObjThree} />
+      <HeroSection {...homeObjTwo} />
   </AppWithAuthentication>
 );
 export default LandingPage;

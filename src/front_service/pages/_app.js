@@ -5,6 +5,9 @@ import withRedux from "next-redux-wrapper";
 
 import initStore from "../src/store";
 
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../public/styles/HeroSection.css";
+
 class EnhancedApp extends App {
   static async getInitialProps({ Component, ctx }) {
     return {

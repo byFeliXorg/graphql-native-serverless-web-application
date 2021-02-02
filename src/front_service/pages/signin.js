@@ -59,7 +59,7 @@ class SignInForm extends Component {
         
         <Container
           className="d-flex align-items-center justify-content-center"
-          style={{ minHeight: "100vh" }}>
+          style={{ minHeight: "80vh" }}>
             
             <div className="w-100" style={{ maxWidth: "500px" }}>
             
@@ -89,7 +89,7 @@ class SignInForm extends Component {
                         placeholder="Password" />
                     </Form.Group>
 
-                    <Button disabled={isInvalid} type="submit" className="w-100" >
+                    <Button disabled={isInvalid} type="submit" className="w-100" style={{background:"#343a40",color:"#ffc107",border: "none"}} >
                       LOGIN
                     </Button>
                     {error && <p>{error.message}</p>}

@@ -65,7 +65,7 @@ class SignUpForm extends Component {
       <div>
         <Container
           className="d-flex align-items-center justify-content-center"
-          style={{ minHeight: "100vh" }}>
+          style={{ minHeight: "80vh" }}>
             
             <div className="w-100" style={{ maxWidth: "500px" }}>
               <Card>
@@ -118,7 +118,7 @@ class SignUpForm extends Component {
                         placeholder="Confirm Password"/>
                     </Form.Group>
 
-                    <Button disabled={isInvalid} className="w-100" type="submit">
+                    <Button disabled={isInvalid} className="w-100" style={{background:"#343a40",color:"#ffc107",border: "none"}} type="submit">
                       JOIN NOW
                     </Button>
                     {error && <p>{error.message}</p>}
