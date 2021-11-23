@@ -4,6 +4,11 @@ import { connect } from "react-redux";
 import { AppWithAuthorization } from "../src/components/App";
 import { db } from "../src/firebase";
 
+import { ApolloProvider } from "@apollo/client";
+import { client } from "../utils/apollo-client";
+
+import OfferList from "../src/components/data/offerList";
+
 const fromObjectToList = object =>
   object
     ? Object.keys(object).map(key => ({ ...object[key], index: key }))
@@ -23,8 +28,12 @@ class HomePage extends Component {
 
     return (
       <AppWithAuthorization>
-        <h1>Home</h1>
-        <p>The Home Page is accessible by every signed in user.</p>
+        <ApolloProvider client={client}>
+          <br/>
+          <div>
+            <OfferList />
+          </div>
+        </ApolloProvider>
 
         {!!users.length && <UserList users={users} />}
       </AppWithAuthorization>

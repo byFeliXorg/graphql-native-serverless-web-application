@@ -1,0 +1,34 @@
+type Query {
+  allOffres: [Offre!]!
+  allUsers: [User!]!
+  UserbyID (id_firebase_auth: String!): User!
+}
+
+type User {
+  id_firebase_auth: String! @unique
+  email: String! @unique
+  offres: [Offre!] @relation
+}
+
+type Address  @embedded {
+    addresssub: String
+    ville: String!
+    zipCode: String
+}
+
+type Offre {
+    title: String!
+    description: String
+    phonenumber: Int!
+    address: Address! 
+    postedBy: User! 
+    category: Category!
+    createdAt: Time 
+}
+
+enum Category{
+  PLUMBING
+  ELECTRICITY 
+  APPILIANCE
+  OTHER
+}

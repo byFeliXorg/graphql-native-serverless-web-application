@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Form, Button, Card, Alert,Container } from "react-bootstrap";
 
 import { auth } from '../../firebase';
 
@@ -45,25 +46,45 @@ class PasswordChangeForm extends Component {
       passwordOne === '';
 
     return (
-      <form onSubmit={this.onSubmit}>
-        <input
-          value={passwordOne}
-          onChange={event => this.setState(updateByPropertyName('passwordOne', event.target.value))}
-          type="password"
-          placeholder="New Password"
-        />
-        <input
-          value={passwordTwo}
-          onChange={event => this.setState(updateByPropertyName('passwordTwo', event.target.value))}
-          type="password"
-          placeholder="Confirm New Password"
-        />
-        <button disabled={isInvalid} type="submit">
-          Reset My Password
-        </button>
+        <Container
+            className="d-flex align-items-center justify-content-center"
+            style={{ minHeight: "80vh" }}>
+            
+            <div className="w-100" style={{ maxWidth: "500px" }}>
+            
+            <Card>
+                <Card.Body>
+                  <h2 className="text-center mb-4">Change Password</h2>
+                  
+                  <Form onSubmit={this.onSubmit}>
 
-        { error && <p>{error.message}</p> }
-      </form>
+                    <Form.Group id="newpassword">
+                      <Form.Label>New Password</Form.Label>
+                      <Form.Control 
+                        value={passwordOne}
+                        onChange={event => this.setState(updateByPropertyName('passwordOne', event.target.value))}
+                        type="password"
+                        placeholder="New Password" />
+                    </Form.Group>
+
+                    <Form.Group id="confpassword">
+                      <Form.Label>New Password</Form.Label>
+                      <Form.Control 
+                        value={passwordTwo}
+                        onChange={event => this.setState(updateByPropertyName('passwordTwo', event.target.value))}
+                        type="password"
+                        placeholder="Confirm New Password" />
+                    </Form.Group>
+
+                    <Button disabled={isInvalid} className="w-100"  type="submit" style={{background:"#343a40",color:"#ffc107",border: "none"}}>
+                        RESET PASSWORD
+                    </Button>
+                    { error && <p>{error.message}</p> }
+                  </Form>
+                </Card.Body>
+              </Card>
+            </div>
+        </Container>
     );
   }
 }

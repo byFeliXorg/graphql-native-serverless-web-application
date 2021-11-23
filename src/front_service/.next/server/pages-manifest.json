@@ -1,9 +1,12 @@
 {
   "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
+  "/account": "pages/account.js",
+  "/home": "pages/home.js",
+  "/": "pages/index.js",
+  "/offers": "pages/offers.js",
+  "/pw-forget": "pages/pw-forget.js",
   "/signin": "pages/signin.js",
   "/signup": "pages/signup.js",
-  "/home": "pages/home.js",
-  "/": "pages/index.js"
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js"
 }

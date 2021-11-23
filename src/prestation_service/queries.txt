@@ -1,0 +1,49 @@
+mutation {
+  createUser(
+    data: {
+      id_firebase_auth: "DoDhttBlRidECVyRhyq6dAdplB52"
+      email: "kbh2025@gmail.com"
+    }
+  ) {
+    _id
+    id_firebase_auth
+     prestations{
+      data {
+        title
+        competances
+      }
+    }
+  }
+}
+------------------------------------
+mutation {
+  createPrestation(
+    data: {
+      title: "service provision Title "
+      description: "This is a description of my profile "
+      phonenumber: 678999787
+      category: ELECTRICITY
+      availableOn: "example city"
+      postedBy: { connect: 289641379828597253 }
+    }
+  ) {
+    _id
+    postedBy {
+      email
+    }
+  }
+}
+----------------------------------
+{
+  UserbyID(id_firebase_auth: "DoDhttBlRidECVyRhyq6dAdplB52") {
+    email
+     prestations{
+      data {
+        title
+        description
+        category
+        availableOn
+      }
+    }
+  }
+}

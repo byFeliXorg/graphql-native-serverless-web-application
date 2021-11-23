@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const FETCH_OFFERS = 'FETCH_OFFERS';","map":{"version":3,"sources":["D:/DEV/git_microservices/microservices/src/front_service/src/actions/types.js"],"names":["FETCH_OFFERS"],"mappings":"AAAA,OAAO,MAAMA,YAAY,GAAG,cAArB","sourcesContent":["export const FETCH_OFFERS = 'FETCH_OFFERS';"]},"metadata":{},"sourceType":"module"}

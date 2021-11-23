@@ -1,0 +1,23 @@
+
+enum Status{
+  PENDING
+  ACCEPT
+  REFUSE
+  COMPLETE
+}
+
+type Query {
+  feed: [Bidding!]!
+  biddingOnOffre(idOffre: ID!): [Bidding!]
+  biddingOnPrestation(idPrestation: ID!): [Bidding!]
+}
+
+
+type Bidding {
+  idOffre: ID!
+  idPrestation: ID!
+  price: Float
+  startingDate: Date
+  nbDates: Int
+  status: Status!
+}

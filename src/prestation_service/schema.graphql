@@ -1,0 +1,29 @@
+type Query {
+  allPrestation: [Prestation!]!
+  allUsers: [User!]!
+  UserbyID (id_firebase_auth: String!): User!
+}
+
+type User {
+  id_firebase_auth: String! @unique
+  email: String! @unique
+  prestations: [Prestation!] @relation
+}
+
+type Prestation {
+    title: String!
+    description: String!
+    competances: String
+    phonenumber: Int!
+    availableOn: String! 
+    postedBy: User! 
+    category: Category!
+    createdAt: Time 
+}
+
+enum Category{
+  PLUMBING
+  ELECTRICITY 
+  APPILIANCE
+  OTHER
+}

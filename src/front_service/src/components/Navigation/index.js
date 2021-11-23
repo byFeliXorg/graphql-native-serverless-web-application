@@ -25,7 +25,7 @@ const NavigationAuth = () =>
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item"><Link href={routes.HOME}><a class="nav-link">Home</a></Link></li>
-          <li class="nav-item"><Link href={routes.ADDOFFER}><a class="nav-link">Add Offer</a></Link></li>
+          <li class="nav-item"><Link href={routes.ADDOFFER}><a class="nav-link">Offers</a></Link></li>
           <li class="nav-item"><Link href={routes.ACCOUNT}><a class="nav-link">Account</a></Link></li>
         </ul>
       </div>

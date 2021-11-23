@@ -7,8 +7,8 @@ import PasswordChangeForm from "../src/components/PasswordChange";
 
 const AccountPage = ({ authUser }) => (
   <AppWithAuthorization>
-    <h1>Account: {authUser.email}</h1>
-    <PasswordForgetForm />
+    <br></br>
+    <h3>hey {authUser.email}</h3>
     <PasswordChangeForm />
   </AppWithAuthorization>
 );

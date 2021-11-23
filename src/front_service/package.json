@@ -12,9 +12,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@apollo/client": "^3.3.7",
+    "@apollo/react-hooks": "^4.0.0",
     "bootstrap": "^4.6.0",
     "classnames": "2.2.6",
-    "next": "^9.1.7",
+    "faunadb": "^4.0.3",
+    "firebase": "^8.2.6",
+    "graphql": "^15.5.0",
+    "graphql-tag": "^2.11.0",
+    "next": "^9.5.5",
     "next-redux-wrapper": "^4.0.1",
     "react": "^16.12.0",
     "react-bootstrap": "^1.4.3",
@@ -25,5 +31,9 @@
     "redux-devtools-extension": "^2.13.8",
     "redux-thunk": "^2.3.0"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "engines": {
+    "node": "12.16.1",
+    "npm": "6.13.4"
+  }
 }

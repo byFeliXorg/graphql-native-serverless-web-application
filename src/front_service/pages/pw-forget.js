@@ -53,7 +53,7 @@ class PasswordForgetForm extends Component {
 
         <Container
           className="d-flex align-items-center justify-content-center"
-          style={{ minHeight: "100vh" }}>
+          style={{ minHeight: "80vh" }}>
             
             <div className="w-100" style={{ maxWidth: "500px" }}>
             
@@ -73,7 +73,7 @@ class PasswordForgetForm extends Component {
                         placeholder="Email Address" />
                     </Form.Group>
 
-                    <Button disabled={isInvalid} className="w-100"  type="submit">
+                    <Button disabled={isInvalid} className="w-100"  type="submit" style={{background:"#343a40",color:"#ffc107",border: "none"}}>
                         RESET PASSWORD
                     </Button>
                     {error && <p>{error.message}</p>}
