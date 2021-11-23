@@ -4,7 +4,7 @@ FeliX consists of a 4-tier microservices deployed on FaunaDB and consumed with A
 web-based uberization of repair and DIY services app.
 
 ## Global Architecture :
-![GraphQL Native Serverless Architecture](https://user-images.githubusercontent.com/46106305/143057895-fd4ce29a-f918-4ea3-aa7d-232980a8293e.png#gh-light-mode-only)
+![GraphQL Native Serverless Architecture](https://user-images.githubusercontent.com/46106305/143057895-fd4ce29a-f918-4ea3-aa7d-232980a8293e.png)
 
 ## UI
 ![site1](https://user-images.githubusercontent.com/46106305/143058179-e471cc4f-9ebc-4b88-9a59-bd2e0b555905.png)
