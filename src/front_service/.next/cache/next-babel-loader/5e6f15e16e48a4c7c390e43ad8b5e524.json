@@ -1,0 +1,1 @@
+{"ast":null,"code":"export var LANDING = '/';\nexport var SIGN_UP = '/signup';\nexport var SIGN_IN = '/signin';\nexport var PASSWORD_FORGET = '/pw-forget';\nexport var HOME = '/home';\nexport var ADDOFFER = '/offers';\nexport var ACCOUNT = '/account';","map":null,"metadata":{},"sourceType":"module"}

@@ -1,0 +1,81 @@
+query {
+  allOffres {
+    data {
+      title
+      address {
+        ville
+      }
+      postedBy {
+        email
+        id_firebase_auth
+        _id
+      }
+    }
+  }
+}
+
+-----------------------------------------------
+query {
+  allUsers {
+    data {
+      id_firebase_auth
+      _id
+      email
+      offres{title}
+    }
+  }
+}
+
+--------------------------------
+mutation{ 
+  createOffre(
+    data:{
+      title:"Example Title"
+      description:"Description example"
+      category: ELECTRICITY
+      phonenumber: 1234567
+      postedBy:{connect: 289626373292556805}
+      address:{ville:"test"}
+      
+    }
+  )
+  {
+    title
+    postedBy{email}
+  }
+}
+--------------------------------
+mutation {
+  createUser(
+    data: {
+      id_firebase_auth: "DoDhttBlRidECVyRhyq6dAdplB52"
+      email: "kbh2025@gmail.com"
+    }
+  ) {
+    _id
+    id_firebase_auth
+     prestations{
+      data {
+        title
+        competances
+      }
+    }
+  }
+}
+--------------------------------
+query {
+  UserbyID(id_firebase_auth: 1234) {
+    _id
+    id_firebase_auth
+    email
+    offres {
+      title
+      description
+      address {
+        ville
+      }
+    }
+  }
+}
+----------------------------
+"time": "2019-06-14T17:42:54.001987Z"

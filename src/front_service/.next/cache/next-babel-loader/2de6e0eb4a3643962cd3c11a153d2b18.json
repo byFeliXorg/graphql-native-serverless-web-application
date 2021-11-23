@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { ApolloClient, InMemoryCache } from \"@apollo/client\";\nexport var client = new ApolloClient({\n  uri: \"https://graphql.fauna.com/graphql\",\n  headers: {\n    authorization: \"Bearer fnAEBUAm-mACB7_ajbQfrCG0RxIWs_NTgTZlX1EQ\"\n  },\n  cache: new InMemoryCache()\n});","map":null,"metadata":{},"sourceType":"module"}
